@@ -3,11 +3,7 @@ from bs4 import BeautifulSoup
 from flask import Flask
 import csv
 
-
-
 route_timetable_url = 'https://myciti.org.za/en/timetables/route-stop-timetables/'
-
-# Response.content
 
 response = requests.get(route_timetable_url)
 html = response.content
