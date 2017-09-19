@@ -6,10 +6,12 @@
 </head>
 <body>
 <form method="POST" action="stops/timetable" id="stop_form">
-  <input type="submit">
+    <input type="submit">
 </form>
 <select name="stop_id" form="stop_form">
-  <option value="volvo">Volvo</option>
+    {% for value in options %}
+    <option value="{{ value[0] }}">{{ value[1] }}</option>
+    {% endfor %}
 </select>
 </body>
 </html>
