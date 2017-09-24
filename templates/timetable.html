@@ -6,5 +6,10 @@
 </head>
 <body>
 <h1>The Timetable</h1>
+{% for row in rows %}
+<p>
+    {{row[0]}} {{row[1]}} {{row[2]}}
+</p>
+{% endfor %}
 </body>
 </html>
