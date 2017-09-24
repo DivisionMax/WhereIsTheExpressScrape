@@ -32,6 +32,7 @@ def stops():
 @app.route('/timetable')
 def timetable():
     stop_id = request.args.get('id')
+    stop_name = request.args.get('name')
     weekday = time.strftime("%A")
     params = {
         'timetable[weekday]': weekday,
@@ -44,11 +45,15 @@ def timetable():
     table = soup.find('table', attrs={'id': 'bodytable'})
     trs = table.find_all('tr')
     rows = []
+    # Each row is '<time>	<bus>	<direction>'
     for row in trs:
         data = []
         for td in row.find_all('td'):
-            print(td)
             data.append(td.text)
         rows.append(data)
-    # Each row is '<time>	<bus>	<direction>'
-    return render_template('timetable.html', rows=rows)
+    json = {
+        'rows': rows,
+        'day': weekday,
+        'stop': stop_name,
+    }
+    return render_template('timetable.html', data=json)
