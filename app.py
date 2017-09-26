@@ -43,16 +43,16 @@ def timetable():
     print(html)
     soup = BeautifulSoup(html, 'html.parser')
     table = soup.find('table', attrs={'id': 'bodytable'})
-    trs = table.find_all('tr')
-    rows = []
+    # trs = table.find_all('tr')
+    # rows = []
     # Each row is '<time>	<bus>	<direction>'
-    for row in trs:
-        data = []
-        for td in row.find_all('td'):
-            data.append(td.text)
-        rows.append(data)
+    # for row in trs:
+    #     data = []
+    #     for td in row.find_all('td'):
+    #         data.append(td.text)
+    #     rows.append(data)
     json = {
-        'rows': rows,
+        'table': table,
         'day': weekday,
         'stop': stop_name,
     }

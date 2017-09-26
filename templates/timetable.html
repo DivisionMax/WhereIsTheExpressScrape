@@ -8,10 +8,6 @@
 <h1>Timetable</h1>
 <h2>{{data.stop}}</h2>
 <h2>{{data.day}}</h2>
-{% for row in data.rows %}
-<p>
-    {{row[0]}} {{row[1]}} {{row[2]}}
-</p>
-{% endfor %}
+{{data.table | safe}}
 </body>
 </html>
