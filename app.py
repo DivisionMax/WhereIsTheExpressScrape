@@ -4,6 +4,7 @@ import csv
 import sys
 import logging
 import time
+import datetime
 from bs4 import BeautifulSoup
 
 filename = 'stops.csv'
@@ -11,6 +12,8 @@ filename = 'stops.csv'
 url_timetable = 'https://myciti.org.za/en/timetables/route-stop-timetables/'
 
 app = Flask(__name__)
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 @app.route('/', methods=['GET'])
@@ -40,12 +43,20 @@ def timetable():
     }
     response = requests.get(url_timetable, params)
     html = response.content
-    print(html)
     soup = BeautifulSoup(html, 'html.parser')
     table = soup.find('table', attrs={'id': 'bodytable'})
+    trs = table.find_all('tr')
+    rows = []
+    # Each row is '<time>	<bus>	<direction>'
+    for row in trs:
+        data = []
+        for td in row.find_all('td'):
+            data.append(td.text)
+        rows.append(data)
     json = {
-        'table': table,
+        'rows': rows,
         'day': weekday,
         'stop': stop_name,
+        'date': datetime.date.today().strftime("%d %B %Y")
     }
     return render_template('timetable.html', data=json)
