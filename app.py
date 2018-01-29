@@ -44,6 +44,8 @@ def timetable():
     response = requests.get(url_timetable, params)
     html = response.content
     soup = BeautifulSoup(html, 'html.parser')
+    # if stop does not exist, no rows in table body OR
+    # if stop does not exist, <h3>Selected Stop: </h3> in timetable-info is empty
     table = soup.find('table', attrs={'id': 'bodytable'})
     trs = table.find_all('tr')
     rows = []
