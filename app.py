@@ -48,11 +48,14 @@ def timetable():
     trs = table.find_all('tr')
     rows = []
     # Each row is '<time>	<bus>	<direction>'
+    i = 1
     for row in trs:
+        print('{} {}'.format(i, row))
         data = []
         for td in row.find_all('td'):
             data.append(td.text)
         rows.append(data)
+        i = i + 1
     json = {
         'rows': rows,
         'day': weekday,

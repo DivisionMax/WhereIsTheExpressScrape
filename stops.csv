@@ -17,6 +17,8 @@ id,name
 8,Atlantic Beach
 255,Atlantic Skipper
 303,Atlantis
+491,Atlantis Cemetery
+483,Avondale
 392,Azalea
 268,Bakoven
 9,Balfour
@@ -31,6 +33,7 @@ id,name
 482,Berkshire West
 305,Berzelia
 11,Big Bay
+493,Birkenhead
 467,Biscuit Mill
 12,Bitten
 13,Blaauwberg Hospital
@@ -100,6 +103,7 @@ id,name
 218,Dal
 261,Daphne
 35,Darling
+499,Dartford
 470,Davison
 196,Dawn
 36,De Mist
@@ -113,6 +117,7 @@ id,name
 426,Dibana
 316,Disa
 39,Disandt
+497,Discovery
 40,District Six
 477,Dolomites East
 476,Dolomites West
@@ -123,6 +128,7 @@ id,name
 468,Dublin
 43,Dunker
 300,Dunoon
+494,Duynefontein
 44,Earlswood
 45,Echium
 431,Edison
@@ -166,6 +172,7 @@ id,name
 59,Grey
 227,Groote Kerk
 319,Grosvenor
+490,Grosvenor North
 60,Hampstead
 61,Hamptons
 257,Hangberg
@@ -211,6 +218,7 @@ id,name
 77,Kloof
 216,Kloof Nek
 326,Knysna
+495,Koeberg Power Station
 267,Koeel Bay
 427,Kolgha
 277,Koosani
@@ -258,11 +266,13 @@ id,name
 441,Mansfield
 207,Marconi
 349,Marguerite
+484,Marigold
 91,Marina
 92,Marine
 93,MArine Circle
 330,Mauritius
 94,Melkbosch
+487,Melkbosch Village
 95,Melkbosstrand
 96,Merlot
 413,Mfundisweni
@@ -278,6 +288,7 @@ id,name
 331,Montezuma
 364,Montreal
 102,Montrose
+496,Morningfield
 103,Mouille Point
 263,Mount Rhodes
 104,Muscadel
@@ -362,6 +373,7 @@ id,name
 344,Sampson
 379,Sanddrift
 245,Sandown
+498,Sandown East
 336,Saxonsea Clinic
 337,Saxonsea Primary
 296,Scott
@@ -397,6 +409,7 @@ id,name
 156,Surrey
 220,Susan
 374,Swawel
+492,Swift
 157,Table View
 479,Tafelsig Primary
 158,The Castle
@@ -434,7 +447,6 @@ id,name
 355,Vuyani
 177,Waldeck
 178,Wandsworth
-179,Waratah
 181,Water's Edge
 194,Waterford
 180,Waterfront

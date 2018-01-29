@@ -1,14 +1,33 @@
 body {
-    margin: 1.1em;
-    text-align: center;
-    font-size: 12px;
-}
-
-h1 {
-    text-align: left;
+    font-size: large;
 }
 
 table thead{
-    font-size: 14px;
-    background-color: #A5D6D9;
+    text-align: left;
+}
+
+table thead tr:nth-child(2) {
+    text-align: right;
+}
+
+table thead tr:nth-child(1) {
+    text-align: center;
+}
+   
+/* Individual tabel stop columns */
+.time {
+    font-style: italic;
+}
+
+.direction {
+    text-align: right;
+}
+
+.bus {
+    text-align: center;
+}
+
+#search {
+    display: none;
+    margin-bottom: 1em;
 }
