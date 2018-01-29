@@ -52,7 +52,6 @@ def timetable():
     # Each row is '<time>	<bus>	<direction>'
     i = 1
     for row in trs:
-        print('{} {}'.format(i, row))
         data = []
         for td in row.find_all('td'):
             data.append(td.text)
