@@ -64,3 +64,6 @@ def timetable():
         'date': datetime.date.today().strftime("%d %B %Y")
     }
     return render_template('timetable.html', data=json)
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0')
