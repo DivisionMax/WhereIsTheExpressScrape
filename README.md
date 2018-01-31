@@ -1,6 +1,6 @@
 # Where Is the Express
 
-http://46.101.58.214/
+http://whereisthemyciti.com
 
 Born out of the desire for a mobile-friendly version of the Cape Town MyCiti bus-top website.
 
