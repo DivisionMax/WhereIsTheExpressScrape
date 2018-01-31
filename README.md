@@ -10,6 +10,7 @@ Born out of the desire for a mobile-friendly version of the Cape Town MyCiti bus
 ![alt text](images/original_timetable.png "The current MyCiti bus-stop timetable on a mobile screen")
 
 **Version A**
+
 ![alt text](images/new_picker.png "The new MyCiti bus-stop picker on a mobile screen")
 ![alt text](images/new_timetable.png "The new MyCiti bus-stop timetable on a mobile screen")
 
