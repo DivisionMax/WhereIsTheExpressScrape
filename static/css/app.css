@@ -1,3 +1,7 @@
+html {
+    margin: 1.2em;
+}
+
 body {
     font-size: large;
 }
@@ -30,4 +34,15 @@ table thead tr:nth-child(1) {
 #search {
     display: none;
     margin-bottom: 1em;
+}
+
+#navbar li {
+    display: inline;
+    float: left;
+    margin-bottom: 1.2em;
+}
+
+#navbar li a {
+    display: block;
+    padding-right: 1.2em;
 }
