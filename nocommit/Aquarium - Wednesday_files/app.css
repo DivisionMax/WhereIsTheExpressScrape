@@ -1,0 +1,14 @@
+body {
+    margin: 1.1em;
+    text-align: center;
+    font-size: 12px;
+}
+
+h1 {
+    text-align: left;
+}
+
+table thead{
+    font-size: 14px;
+    background-color: #A5D6D9;
+}
